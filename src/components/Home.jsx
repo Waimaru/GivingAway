@@ -1,3 +1,4 @@
+import HomeInfo from "./HomeInfo"
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColums";
 
@@ -6,6 +7,7 @@ function Home() {
         <>
         <HomeHeader></HomeHeader>
         <HomeThreeColumns></HomeThreeColumns>
+        <HomeInfo></HomeInfo>
         </>
     );
 }

@@ -1,7 +1,95 @@
-@import "normalize";
 @import "./settings/colors";
 @import "./settings/fonts";
 
+//dlaczego buttony mają różną wysokość,
+* {
+  margin: 0;
+}
 body {
   font-family: $font-base;
+  
 }
+header {
+    button {
+      background-color: transparent;
+      padding: 8px 16px;
+      border: none; 
+      cursor: pointer;
+    }
+    .btn-container {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+    .create-account-btn {
+      border: 1px solid yellow;
+    }
+    .btn-border{
+      border: 1px solid black;
+    }
+    .menu-btn-container  {
+      display: flex;
+      gap: 14px;
+      justify-content: flex-end;
+      button {
+        font-size: 20px;
+      }
+    }
+  }
+  section {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .background {
+        // position: absolute;
+        background-image: url(../assets/Home-Hero-Image.jpg);
+        width: 55%;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-position: -500px -200px;
+      }
+      .option {
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 35px;
+        width: 250px;
+        height: 120px;
+        background-color: transparent;
+        margin: 0 10px;
+        border: none; 
+        cursor: pointer;
+      }
+      .btn-border{
+        border: 1px solid black;
+      }
+  }
+  .info{
+    width: 100%;
+    background-color: rgb(255, 210, 10);
+    display: flex;
+    justify-content: space-around;
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 5px;
+      margin: 20px;
+      color: $color-primary;
+      div {
+        font-size: 70px;
+      }
+      h3 {
+        margin: 20px;
+      }
+      p {
+        width: 400px;
+      }
+    }
+  }
+  
